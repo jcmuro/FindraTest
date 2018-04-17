@@ -1,0 +1,68 @@
+GET ALL ROCKERS
+http://localhost:8888/api/rockers/
+[
+    {
+        "id": 1,
+        "name": "John",
+        "lastName": "Lennon",
+        "country": "UK"
+    },
+    {
+        "id": 2,
+        "name": "Jeff",
+        "lastName": "Beck",
+        "country": "UK"
+    },
+    {
+        "id": 3,
+        "name": "Paul",
+        "lastName": "Banks",
+        "country": "US"
+    },
+    {
+        "id": 4,
+        "name": "Carlos",
+        "lastName": "Santana",
+        "country": "MX"
+    }
+]
+
+
+GET ROCKER BY ID
+http://localhost:8888/api/rockers/1
+
+{
+    "id": 1,
+    "name": "John",
+    "lastName": "Lennon",
+    "country": "UK"
+}
+
+
+DELETE
+http://localhost:8888/api/rockers/1
+
+
+POST
+http://localhost:8888/api/rockers/
+
+BODY=
+{
+    "name": "Frank",
+    "lastName": "Zappa",
+    "country": "US"
+}
+
+PUT
+
+http://localhost:8888/api/rockers/2
+BODY=
+ {
+        "id": 2,
+        "name": "Jeff R.",
+        "lastName": "Beck",
+        "country": "UK"
+    }
+
+
+
